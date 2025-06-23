@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livreiro do Carrão</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <section class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/TCC.png" width="125px"></a>
+                </div>
+
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Inicial</a></li>
+                        <li><a href="products.html">Livros</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="account.html">Loguin</a></li>
+
+                    </ul>
+                </nav>
+
+                <a href="cart.html"><img src="imagens/image.png" width="30px" height="30px"></a>
+                <img src="imagens/menu.png" class="menu-icon" onClick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Dê um Novo Capítulo à Sua Leitura!</h1>
+                    <p>A grandeza está no hábito. Ler transforma, aproxima, liberta. A cada página, uma nova chance de
+                        mudar o mundo — começando pelo seu.</p>
+                    <!-- <a href="products.html" class="btn">Explore Now &#8594;</a> -->
+                </div>
+                <div class="col-2">
+                    <img src="imagens/biblioteca.avif">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!------------------------------ Gêneros em Destaque------------------------------>
+    <section class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="livros/sherlock.jfif">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3 (2).jpg">
+                </div>
+            </div>
+        </div>
+        <section>
+
+            <!------------------------------ produtos em destaque------------------------------>
+            <div class="small-container">
+                <h2 class="title">Mais Famosos</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/1984.jfif"></a>
+                        <a href="products-details.html">
+                            <h4>1984 - George Orwell</h4>
+                        </a>
+                        <div class="rating">
+                            <!--(before this added awesome4 cdn font link to the head)added a cdn link by searching font awesome4 icon and from the site  search the star entering the first option and getting a link of this fa-star*-->
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$35.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/antesdevc.jfif"></a>
+                        <h4>Como eu era antes de você - Jojo Moyes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>$35.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/principe.jpg"></a>
+                        <h4>O Pequeno Príncipe - Antoine de Saint-Exupêry</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$15.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/olimpianos.jpg"></a>
+                        <h4>Percy Jackson E Os Olimpianos - Rick Riordan</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$30.00</p>
+                    </div>
+                </div>
+
+
+                <h2 class="title">Mais Recentes</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/einstein.jpg"></a>
+                        <h4>Pensando como Einstein - Daniel Smith</h4>
+                        <div class="rating">
+                            <!--(before this added awesome4 cdn font link to the head)added a cdn link by searching font awesome4 icon and from the site  search the star entering the first option and getting a link of this fa-star*-->
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/escaravelho.jpg"></a>
+                        <h4>O Escaravelho De Ouro - Edgar Allan Poe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>$21.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/joel.jfif"></a>
+                        <h4>Esteja, Viva, Permaneça 100% Presente - Joel Jota</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$09.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/ospedeira.jpg"></a>
+                        <h4>A Hospedeira - Stephenie Meyer</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$35.00</p>
+                    </div>
+                </div>
+                <!--new row for the latest product-->
+                <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/talvez.png"></a>
+                        <h4>Talvez um Dia - Colleen Hoover</h4>
+                        <div class="rating">
+                            <!--(before this added awesome4 cdn font link to the head)added a cdn link by searching font awesome4 icon and from the site  search the star entering the first option and getting a link of this fa-star*-->
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/odisseia.jpg"></a>
+                        <h4>A Odisseia - Homero</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>$48.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/dracula.jpg"></a>
+                        <h4>Drácula Bram - Stoker</h4>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$15.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="livros/dead.jpg"></a>
+                        <h4>The Walking Dead - Robert Kirkman & Jay Bonansinga</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$21.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------------`   offer   --------------------------------->
+            <div class="offer">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imagens/livro.jpg" class="offer-img">
+                        </div>
+                        <div class="col-2">
+                            <p></p>
+                            <h1>Livros Usados e Novos</h1>
+                            <small> Seja novo ou usado, cada livro tem um universo a oferecer — e aqui no Livreiro do
+                                Carrão, você
+                                descobre essas histórias pagando pouco. Ler transforma, e aqui isso cabe no seu bolso!
+                            </small><br>
+                            <a href="products.html" class="btn">Comprar Livros &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!------------------------------Testimonial---------------------------------->
+            <div class="testimonial">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Muito feliz em ver que o sebo agora tem um site! Sempre valorizei o trabalho de vocês, e
+                                agora ficou muito mais fácil acessar os livros e aproveitar os preços acessíveis.
+                                Parabéns pela nova fase, vocês merecem! </p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <img src="images/user-1.png">
+                            <h3>Vanessa Lima</h3>
+                        </div>
+
+                        <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Conheci o sebo pelo site e já virei cliente! Achei tudo muito fácil de navegar, os preços
+                                são ótimos e ainda chegou rapidinho aqui em casa. É muito bom ver iniciativas assim
+                                facilitando o acesso à leitura!</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <img src="images/user-2.png">
+                            <h3>José Carlos</h3>
+                        </div>
+
+                        <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Acompanho o sebo há anos e é incrível ver o crescimento de vocês. Ter um site agora é um
+                                passo enorme! Dá orgulho ver um negócio da quebrada ganhando espaço também no digital.
+                                Continuem firmes, a cultura agradece! </p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <img src="images/user-3.png">
+                            <h3>Rafaela Souza</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------------------------Brands----------------------------------
+            <div class="brands">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="images/logo-godrej.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <img src="images/logo-oppo.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <img src="images/logo-coca-cola.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <img src="images/logo-paypal.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <img src="images/logo-philips.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!----------------------------------footer------------------------------------->
+            <footer class="footer">
+                <div class="container">
+
+                    <div class="row">
+                        <!-- <div class="footer-col-1">
+                            <h3></h3>
+                            <p>Download App for Android and ios mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="images/play-store.png" alt="">
+                                <img src="images/app-store.png" alt="">
+                            </div>
+                        </div> -->
+                        
+                        <div class="footer-col-2">
+                            <img src="images/logo-white.png">
+                            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the
+                                Many.
+                            </p>
+                        </div>
+
+                        <!-- <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div> -->
+
+                        <div class="footer-col-4">
+                            <h3>Contatos</h3>
+                            <ul>
+                            
+                                <li><a href="">Instagram</a></li>
+                                <li>Youtube</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <hr><!--horizontal line-->
+                    <p class="copyright">Copyright 2021 - Apurba Kr. Pramanik</p>
+
+                </div>
+            </footer>
+
+
+            <!-----------------------------------js for toggle menu----------------------------------------------->
+            <script>
+                var menuItems = document.getElementById("MenuItems");
+
+                MenuItems.style.maxHeight = "0px";
+                function menutoggle() {
+                    if (MenuItems.style.maxHeight == "0px") {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                    else {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+
+</body>
+
+</html>
