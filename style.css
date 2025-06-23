@@ -9,10 +9,14 @@ body, html{
 }
 
 .header{
-    background-color: #c29d7e 
+    background-image: url(imagens/texto\ texto.png);
 }
 .header .row{
     margin-top: 70px;
+}
+
+.titulo{
+    color: #ffff;
 }
 
 /*nav maenu on the left as a unordered list*/
@@ -34,7 +38,8 @@ nav ul{
 /*nav maenu on the right as a vertically list with 50px gapping with each with underline*/
 nav ul li{
     display: inline-block;
-    margin-right: 50px;   
+    margin-right: 50px; 
+    font-size: 20px;  
 }
 /*nav maenu on the right as a vertically list with 50px gapping with each without underline*/
 a{
@@ -43,6 +48,8 @@ a{
 }
 p{
     color: #ffffff;
+    font-size: 30px;
+
 }
 
 .container{
