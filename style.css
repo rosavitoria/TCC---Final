@@ -1,55 +1,85 @@
-*{
+@charset "UTF-8";
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body, html{
+
+body, html {
     font-family: 'Poppins', sans-serif;
     height: 100%;
 }
 
-.header{
+.header {
     background-image: url(imagens/fundo.png);
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
 }
-.header .row{
+
+.header .row {
     margin-top: 70px;
 }
 
-.titulo{
-    color: #ffff;
+.container-titulo {
+  width: 100%;
+  /* sem centralização */
 }
 
-/*nav maenu on the left as a unordered list*/
-.navbar{
-    display:flex;
-    align-items: center;
-    padding:20px;
+.titulo {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0;
+  text-align: left; /* garante alinhamento do texto */
 }
-/*nav maenu on the right as a unordered list*/
-nav{
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav {
     flex: 1;
     text-align: right;
 }
-/*nav maenu on the right as a list but without bullet*/
-nav ul{
-    display: inline-block;
-    list-style-type: none;   
+
+#MenuItems {
+    list-style-type: none;
+     display: inline-flex !important;
+    gap: 40px;
 }
-/*nav maenu on the right as a vertically list with 50px gapping with each with underline*/
-nav ul li{
-    display: inline-block;
-    margin-right: 50px; 
-    font-size: 20px;  
+
+#MenuItems li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s;
 }
-/*nav maenu on the right as a vertically list with 50px gapping with each without underline*/
-a{
+
+#MenuItems li a:hover {
+    color: #a59090;
+}
+
+a {
     text-decoration: none;
     color: #ffffff;
 }
-p{
+
+p {
     color: #ffffff;
     font-size: 30px;
+}
 
+
+#botao{
+    font-size: 19px;
+    width: 200px;
+    height: auto;
 }
 
 .container{
@@ -63,6 +93,7 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 100px;
 }
 
 .col-2{
@@ -72,7 +103,11 @@ p{
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
-} 
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .col-2 h1{
     font-size: 50px;
@@ -89,6 +124,14 @@ p{
     border-radius: 30px;
     transition:background 0.5s;
 }
+
+#livrinho {
+    height: auto;
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .btn:hover{
     background: #563434;
 }
@@ -223,82 +266,186 @@ small{
     filter: grayscale(0);
 }
 
-/*-----------------------Footer -----------------------*/
-.footer{
-    background:#000; /*black;*/
-    color: #8a8a8a;
-    font-size: 14px;
-    padding:60px 0 20px;
-    margin: 10px 0 0px;
+/* ------------------- Footer Bonito e Separado ------------------- */
 
+.footer {
+    background: #000;
+    color: #d3d3d3;
+    font-size: 16px;
+    padding: 60px 20px 30px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: left;
 }
 
-.footer p{
-    color: #bdb9b9;
-    font-size: 15px;
-}
-
-.footer h3{
-    color:#fff;
+.footer h3 {
+    color: #ffffff;
     margin-bottom: 20px;
-}
-.footer-col-1, .footer-col-2,.footer-col-3,.footer-col-4{
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-.footer-col-1{
-    flex-basis: 30%;
-}
-.footer-col-2{
-    flex: 1;
-    text-align: center;
-}
-.footer-col-2 img{
-    width: 180px;
-    margin-bottom: 20px;
-}
-.footer-col-3,.footer-col-4{
-    flex-basis: 12%;
-    text-align: center;
-}
-ul{
-    list-style-type: none;   
-}
-.app-logo{
-    margin-top: 20px;
-}
-.app-logo img{
-    width: 140px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.footer hr{
-    border: none;
-    background: #b5b5b5;
-    height: 1px;
-    margin: 20px 0;
-}
-.copyright{
-    text-align: center;
+.footer p,
+.footer li,
+.footer a {
+    color: #ccc;
+    line-height: 1.8;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.footer-col-4 img{
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    flex: 1 1 220px;
+    min-width: 220px;
+    padding: 15px;
+}
+
+.footer-col-2 img {
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+.footer-col-3 iframe {
+    width: 100%;
+    height: 180px;
+    border: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-col-4 img {
     width: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
     filter: invert(100%);
 }
 
-
-
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;  
-    display:none;
+.footer-col-4 a {
+    display: flex;
+    align-items:flex-;
+    gap: 10px;
+    margin-bottom: 10px;
 }
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: center;   /* Centraliza horizontalmente */
+    align-items: center;       /* Centraliza verticalmente (se tiver altura) */
+    width: 100%;
+    height: 100%;              /* Ou: height: 300px; se quiser altura fixa */
+    padding: 20px 0;
+}
+
+#mapa {
+    width: 100%;
+    max-width: 500px;          /* Largura máxima do mapa */
+    height: 300px;             /* Altura do mapa */
+    border: none;              /* Tira a borda */
+}
+
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        flex-basis: 100%;
+    }
+
+    .footer-col-4 a {
+        justify-content: center;
+    }
+
+    #mapa {
+        width: 90%;
+    }
+}
+
+.menu-icon {
+    width: 30px;
+    margin-left: 20px;
+    display: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2);               /* Aumenta o tamanho ao passar o mouse */
+    filter: brightness(1.5);             /* Deixa o ícone mais claro */
+    cursor: pointer;                     /* Mostra o cursor de mãozinha */
+}
+
 
 #MenuItems {
+    display: flex;
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.3s ease;
+    list-style: none;
+    padding-left: 0;
 }
+
+@media (min-width: 800px) {
+    /* Em telas maiores, mostra o menu sempre */
+    #MenuItems {
+        max-height: none;
+        display: flex;
+        gap: 30px;
+    }
+}
+
+    nav ul li {
+        display: block;
+        margin: 10px 50px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
 
 /*-----------------------media query for menu -----------------------*/
 @media only screen and (max-width:800px){
@@ -565,3 +712,4 @@ form a{
     transition: transform 1s;
 
 }
+
